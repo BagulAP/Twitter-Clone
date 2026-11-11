@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Clone</title>
+
+    <link rel="stylesheet" href="./css/output.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+
+<body class="bg-black text-white">
+
+    <div class="max-w-7xl mx-auto flex">
+
+        <!-- Left Sidebar -->
+        <div class="logo w-64">
+
+            <div class="first w-[90%] py-4">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8">
+                    <path d="M18.244 2H21.5l-7.11 8.13L22.75 22h-6.54l-5.12-6.69L5.24 22H2l7.6-8.69L1.25
+                    2h6.71l4.63 6.13L18.244 2Zm-1.15 18h1.81L6.97 3.9H5.03L17.094 20Z" />
+                </svg>
+            </div>
+
+            <div class="sidebar">
+                <ul class="flex flex-col text-xl space-y-3">
+                    <li class="flex items-center gap-3"><span class="material-symbols-outlined">home</span><span class="hidden md:block">Home</span></li>
+                    <li class="flex items-center gap-3"><span class="material-symbols-outlined">search</span><span class="hidden md:block">Explore</span></li>
+                    <li class="flex items-center gap-3"><span
+                            class="material-symbols-outlined">notifications</span><span class="hidden md:block">Notifications</span></li>
+                    <li class="flex items-center gap-3"><span class="material-symbols-outlined">auto_awesome</span>Grok
+                    </li>
+                    <li class="flex items-center gap-3"><span class="material-symbols-outlined">list_alt</span>Lists
+                    </li>
+                    <li class="flex items-center gap-3"><span class="material-symbols-outlined">bookmark</span>Bookmarks
+                    </li>
+                    <li class="flex items-center gap-3"><span class="material-symbols-outlined">mail</span>Messages</li>
+                    <li class="flex items-center gap-3"><span class="material-symbols-outlined">groups</span>Communities
+                    </li>
+                    <li class="flex items-center gap-3"><span
+                            class="material-symbols-outlined">workspace_premium</span>Premium</li>
+                    <li class="flex items-center gap-3"><span class="material-symbols-outlined">person</span>Profile
+                    </li>
+                    <li class="flex items-center gap-3"><span class="material-symbols-outlined">more_horiz</span>More
+                    </li>
+                </ul>
+                <div class="button flex justify-center mt-8">
+                    <button
+                        style="background-color:#1D9BF0; color:white; width:230px; height:52px; border:none; border-radius:9999px; font-size:17px; font-weight:700; cursor:pointer; margin-top: 20px;">
+                        Post
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Middle Section -->
+        <div class="second flex-1 border-x border-white min-h-screen ">
+            <div class="top flex items-center border-b border-gray-800 p-3 relative">
+                <div class="absolute w-8 h-1 bg-blue-700 bottom-0 left-[90%] z-10"></div>
+
+
+                <div
+                    class="left flex-1 justify-center items-center font-bold text-[15px] hover:bg-[#16181c] cursor-pointer relative w-1/2 text-lg">
+                    <span
+                        style="text-decoration: underline; text-decoration-color:#1D9BF0; text-decoration-thickness:4px; text-underline-offset:8px;">
+                        For You
+                    </span>
+                </div>
+
+                <div
+                    class="right flex-1 flex justify-center items-center h-14 font-bold text-[15px] hover:bg-[#16181c] cursor-pointer">
+                    Following
+                </div>
+
+                <div class="px-3 flex justify-center items-center">
+                    <button
+                        class="w-10 h-10 mb-1 rounded-full hover:bg-[#16181c] flex justify-center items-center transition">
+                        <span class="material-symbols-outlined text-[20px]">
+                            settings
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div style="width:100%; height:1px; background:#2f3336;"></div>
+
+            <div class="whatishapp flex items-center gap-3 p-4">
+                <div class="img">
+                    <img src="./logo.png" alt="Profile" style="width:55px; height:50px;"
+                        class="rounded-full object-cover">
+                </div>
+
+                <input class="w-full bg-black text-white placeholder-gray-500 outline-none text-xl h-7 my-5" type="text"
+                    placeholder="What's happening?">
+
+            </div>
+            <div class="text-blue-600 flex items-center gap-2 p-4" style="margin-left:68px;">
+                <span class="material-symbols-outlined text-[18px]">
+                    globe_asia
+                </span>
+                <span class="font-bold">Everyone can reply</span>
+
+            </div>
+            <div
+                style="width:calc(97% - 68px); height:0.1px; background:#2f3336; margin-left:68px; margin-bottom:10px;">
+            </div>
+
+            <div class="blueicons flex justify-between items-center mt-3 px-3">
+
+                <div class="flex items-center gap-5" style="margin-left:68px;">
+
+                    <span class="material-symbols-outlined cursor-pointer p-2 rounded-full hover:bg-[#0a171f]"
+                        style="color:#1D9BF0 !important;">
+                        image
+                    </span>
+
+                    <span class="material-symbols-outlined cursor-pointer p-2 rounded-full hover:bg-[#0a171f]"
+                        style="color:#1D9BF0 !important;">
+                        gif
+                    </span>
+
+                    <span class="material-symbols-outlined cursor-pointer p-2 rounded-full hover:bg-[#0a171f]"
+                        style="color:#1D9BF0 !important;">
+                        ballot
+                    </span>
+
+                    <span class="material-symbols-outlined cursor-pointer p-2 rounded-full hover:bg-[#0a171f]"
+                        style="color:#1D9BF0 !important;">
+                        sentiment_satisfied
+                    </span>
+
+                    <span class="material-symbols-outlined cursor-pointer p-2 rounded-full hover:bg-[#0a171f]"
+                        style="color:#1D9BF0 !important;">
+                        calendar_month
+                    </span>
+
+                    <span class="material-symbols-outlined cursor-pointer p-2 rounded-full hover:bg-[#0a171f]"
+                        style="color:#1D9BF0 !important;">
+                        pin_drop
+                    </span>
+
+                </div>
+
+                <button
+                    style="background-color:#1D9BF0; color:white; width:67px; height:40px; border:none; border-radius:99px; font-size:15px; font-weight:500; cursor:pointer; margin-bottom: 6px; margin-left: 300px;">
+                    Post
+                </button>
+            </div>
+            <div style="width:100%; height:2px; background:#2f3336;"></div>
+            <div style="width:100%; text-align:center; padding:14px 0; color:#1D9BF0; font-weight:500; cursor:pointer;">
+                Show 280 posts
+            </div>
+            <div style="width:100%; height:0.1px; background:#2f3336;"></div>
+            <div class="post flex gap-3 p-4 border-b border-[#2f3336]">
+
+                <!-- Profile Image -->
+                <div>
+                    <img src="./logo.png" alt="Profile" style="width:55px; height:50px;"
+                        class="rounded-full object-cover">
+                </div>
+
+                <!-- Post Content -->
+                <div class="w-full">
+
+                    <!-- Header -->
+                    <div class="flex items-center gap-2">
+                        <span class="font-bold text-white hover:underline cursor-pointer">NPAV</span>
+                        <span class="text-gray-500">@npav</span>
+                        <span class="text-gray-500">·</span>
+                        <span class="text-gray-500">19h</span>
+                    </div>
+
+                    <!-- Tweet -->
+                    <div class="mt-2 text-white text-[15px] leading-6">
+                        🎉 Thanks for 2K Subscribers! ❤️<br><br>
+                        #2KSubscribers #ThankYou #NPAV #Milestone
+
+                    </div>
+
+                    <div
+                        style="display:flex; justify-content:space-between; align-items:center; width:100%; margin-top:15px; color:#71767b; font-size:14px;">
+
+                        <div style="display:flex; align-items:center; gap:4px; cursor:pointer;">
+                            <span class="material-symbols-outlined" style="font-size:20px;">chat_bubble</span>
+                            <span>24</span>
+                        </div>
+
+                        <div style="display:flex; align-items:center; gap:4px; cursor:pointer;">
+                            <span class="material-symbols-outlined" style="font-size:20px;">repeat</span>
+                            <span>12</span>
+                        </div>
+
+                        <div style="display:flex; align-items:center; gap:4px; cursor:pointer;">
+                            <span class="material-symbols-outlined" style="font-size:20px;">favorite</span>
+                            <span>2.3K</span>
+                        </div>
+
+                        <div style="display:flex; align-items:center; gap:4px; cursor:pointer;">
+                            <span class="material-symbols-outlined" style="font-size:20px;">bar_chart</span>
+                            <span>18K</span>
+                        </div>
+
+                        <div style="display:flex; align-items:center; gap:4px; cursor:pointer;">
+                            <span class="material-symbols-outlined" style="font-size:20px;">bookmark</span>
+                            <span>58</span>
+                        </div>
+
+                        <div style="display:flex; align-items:center; gap:4px; cursor:pointer;">
+                            <span class="material-symbols-outlined" style="font-size:20px;">share</span>
+                            <span>15</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="width:100%; height:0.1px; background:#2f3336;margin-top: 3px;"></div>
+            <div class="flex gap-3 p-4">
+
+                <div>
+                    <img src="./NPAV Network Logo.png" alt="Profile" style="width:55px; height:55px;"
+                        class="rounded-full object-cover">
+                </div>
+
+                <div class="flex-1">
+
+                    <div class="flex items-center gap-2">
+                        <span class="font-bold text-white hover:underline cursor-pointer">Malhar Music</span>
+                        <span class="text-gray-500">@malharmusic</span>
+                        <span class="text-gray-500">·</span>
+                        <span class="text-gray-500">2d</span>
+                    </div>
+
+                    <div class="mt-2 text-white text-[15px] leading-6">
+                        What's Up Guys! ❤️<br>
+                        #WarliPainting #ThankYou
+                    </div>
+
+                    <div class="mt-3">
+                        <img src="./Warli Painting.jpg" alt="Warli Painting"
+                            style="width:100%; border-radius:16px; border:1px solid #2f3336; object-fit:cover;">
+                    </div>
+
+                    <!-- Action Bar -->
+                    <div
+                        style="display:flex; justify-content:space-between; align-items:center; margin-top:12px; color:#71767b; font-size:14px;">
+
+                        <div style="display:flex; align-items:center; gap:4px; cursor:pointer;">
+                            <span class="material-symbols-outlined" style="font-size:20px;">chat_bubble</span>
+                            <span>24</span>
+                        </div>
+
+                        <div style="display:flex; align-items:center; gap:4px; cursor:pointer;">
+                            <span class="material-symbols-outlined" style="font-size:20px;">repeat</span>
+                            <span>12</span>
+                        </div>
+
+                        <div style="display:flex; align-items:center; gap:4px; cursor:pointer;">
+                            <span class="material-symbols-outlined" style="font-size:20px;">favorite</span>
+                            <span>2.3K</span>
+                        </div>
+
+                        <div style="display:flex; align-items:center; gap:4px; cursor:pointer;">
+                            <span class="material-symbols-outlined" style="font-size:20px;">bar_chart</span>
+                            <span>18K</span>
+                        </div>
+
+                        <div style="display:flex; align-items:center; gap:4px; cursor:pointer;">
+                            <span class="material-symbols-outlined" style="font-size:20px;">bookmark</span>
+                            <span>58</span>
+                        </div>
+
+                        <div style="display:flex; align-items:center; gap:4px; cursor:pointer;">
+                            <span class="material-symbols-outlined" style="font-size:20px;">share</span>
+                            <span>15</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <hr>
+
+        <!-- Right Section -->
+        <div class="third w-80">
+
+            <div class="search m-3">
+                <input type="text" class="w-full rounded-full bg-[#16181c] text-white px-4 py-2" placeholder="Search">
+            </div>
+
+            <div class="whats m-3 bg-[#16181c] rounded-2xl p-4">
+                <h1 class="text-xl font-bold mb-4">What's Happening</h1>
+
+                <div class="item my-3 hover:bg-gray-800 cursor-pointer rounded-lg p-2">
+                    <div class="font-bold text-sm text-gray-500">Trending in India</div>
+                    <div class="font-semibold">#NPAVArts</div>
+                    <div class="text-sm text-gray-500">40.2K Posts</div>
+                </div>
+
+                <div class="item my-3 hover:bg-gray-800 cursor-pointer rounded-lg p-2">
+                    <div class="font-bold text-sm text-gray-500">Trending in India</div>
+                    <div class="font-semibold">#SankritClasses</div>
+                    <div class="text-sm text-gray-500">40.2K Posts</div>
+                </div>
+
+                <div class="item my-3 hover:bg-gray-800 cursor-pointer rounded-lg p-2">
+                    <div class="font-bold text-sm text-gray-500">Trending in India</div>
+                    <div class="font-semibold">#NPAVCreation</div>
+                    <div class="text-sm text-gray-500">40.2K Posts</div>
+                </div>
+
+                <div class="item my-3 hover:bg-gray-800 cursor-pointer rounded-lg p-2">
+                    <div class="font-bold text-sm text-gray-500">Trending in India</div>
+                    <div class="font-semibold">#MalharMusic</div>
+                    <div class="text-sm text-gray-500">40.2K Posts</div>
+                </div>
+            </div>
+
+            <div class="who m-3 bg-[#16181c] rounded-2xl p-4">
+                <h1 class="text-xl font-bold px-3">Who To Follow</h1>
+
+                <div class="item p-3 px-3 space-y-4">
+                    <div class="font-bold cursor-pointer">Sanskrit Classes</div>
+                    <div class="font-bold cursor-pointer text-gray-200">Akshay Kumar</div>
+                    <div class="font-bold cursor-pointer text-gray-200">Tiger Shroff</div>
+                    <div class="font-bold cursor-pointer text-gray-200">Ameesha Patel</div>
+                    <div class="text-blue-600 underline my-5 cursor-pointer">Show More</div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
